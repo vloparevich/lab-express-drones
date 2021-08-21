@@ -8,7 +8,6 @@ router.get('/drones', (req, res, next) => {
   // Iteration #2: List the drones
   // ... your code here
   Drone.find().then((dronesFromDB) => {
-    console.log(dronesFromDB);
     res.render('drones/list', { dronesFromDB });
   });
 });
